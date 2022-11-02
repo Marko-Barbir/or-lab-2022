@@ -1,0 +1,593 @@
+[
+	{
+		"name": "Kendrick Lamar",
+		"collections": [
+			{
+				"name":"Mr. Morale & The Big Steppers",
+				"type":"album",
+				"tracks":[
+					{
+						"name":"The Heart Part V",
+						"duration_seconds":332,
+						"is_explicit":true,
+						"spotify_streams":48528772,
+						"youtube_streams":41098540,
+						"youtube_likes":1907000,
+						"youtube_dislikes_estimated":18131,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Mirror",
+						"duration_seconds":256,
+						"is_explicit":true,
+						"spotify_streams":34019440,
+						"youtube_streams":3670193,
+						"youtube_likes":111000,
+						"youtube_dislikes_estimated":791,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Mother I Sober",
+						"duration_seconds":406,
+						"is_explicit":true,
+						"spotify_streams":24419668,
+						"youtube_streams":3544301,
+						"youtube_likes":96000,
+						"youtube_dislikes_estimated":842,
+						"credited_artists":[
+							{
+								"name": "Beth Gibbons"
+							},
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Mr. Morale",
+						"duration_seconds":210,
+						"is_explicit":true,
+						"spotify_streams":38928066,
+						"youtube_streams":4453325,
+						"youtube_likes":116000,
+						"youtube_dislikes_estimated":1000,
+						"credited_artists":[
+							{
+								"name": "Tanna Leone"
+							},
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Auntie Diaries",
+						"duration_seconds":281,
+						"is_explicit":true,
+						"spotify_streams":28159655,
+						"youtube_streams":2308133,
+						"youtube_likes":60000,
+						"youtube_dislikes_estimated":2200,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Savior",
+						"duration_seconds":224,
+						"is_explicit":true,
+						"spotify_streams":56651442,
+						"youtube_streams":5733898,
+						"youtube_likes":118000,
+						"youtube_dislikes_estimated":1100,
+						"credited_artists":[
+							{
+								"name": "Sam Dew"
+							},
+							{
+								"name": "Baby Keem"
+							},
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Savior - Interlude",
+						"duration_seconds":152,
+						"is_explicit":true,
+						"spotify_streams":27141800,
+						"youtube_streams":1958553,
+						"youtube_likes":42000,
+						"youtube_dislikes_estimated":255,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Silent Hill",
+						"duration_seconds":220,
+						"is_explicit":true,
+						"spotify_streams":83381223,
+						"youtube_streams":19935539,
+						"youtube_likes":354000,
+						"youtube_dislikes_estimated":9400,
+						"credited_artists":[
+							{
+								"name": "Kodak Black"
+							},
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Crown",
+						"duration_seconds":264,
+						"is_explicit":true,
+						"spotify_streams":30684782,
+						"youtube_streams":2582050,
+						"youtube_likes":56000,
+						"youtube_dislikes_estimated":544,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Count Me Out",
+						"duration_seconds":283,
+						"is_explicit":true,
+						"spotify_streams":67302831,
+						"youtube_streams":10774221,
+						"youtube_likes":193000,
+						"youtube_dislikes_estimated":1200,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Purple Hearts",
+						"duration_seconds":329,
+						"is_explicit":true,
+						"spotify_streams":52351109,
+						"youtube_streams":5416242,
+						"youtube_likes":122000,
+						"youtube_dislikes_estimated":916,
+						"credited_artists":[
+							{
+								"name": "Ghostface Killah"
+							},
+							{
+								"name": "Summer Walker"
+							},
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"We Cry Together",
+						"duration_seconds":341,
+						"is_explicit":true,
+						"spotify_streams":49379689,
+						"youtube_streams":7613336,
+						"youtube_likes":226000,
+						"youtube_dislikes_estimated":4100,
+						"credited_artists":[
+							{
+								"name": "Taylour Paige"
+							},
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Rich Spirit",
+						"duration_seconds":202,
+						"is_explicit":true,
+						"spotify_streams":95455147,
+						"youtube_streams":8407267,
+						"youtube_likes":153000,
+						"youtube_dislikes_estimated":1300,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Rich - Interlude",
+						"duration_seconds":103,
+						"is_explicit":true,
+						"spotify_streams":31156192,
+						"youtube_streams":2054394,
+						"youtube_likes":33000,
+						"youtube_dislikes_estimated":279,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Father Time",
+						"duration_seconds":222,
+						"is_explicit":true,
+						"spotify_streams":79671528,
+						"youtube_streams":6360256,
+						"youtube_likes":141000,
+						"youtube_dislikes_estimated":735,
+						"credited_artists":[
+							{
+								"name": "Sampha"
+							},
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Die Hard",
+						"duration_seconds":239,
+						"is_explicit":true,
+						"spotify_streams":148720056,
+						"youtube_streams":10932146,
+						"youtube_likes":182000,
+						"youtube_dislikes_estimated":1700,
+						"credited_artists":[
+							{
+								"name": "Amanda Reifer"
+							},
+							{
+								"name": "Blxst"
+							},
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"Worldwide Steppers",
+						"duration_seconds":203,
+						"is_explicit":true,
+						"spotify_streams":45434119,
+						"youtube_streams":3920385,
+						"youtube_likes":79000,
+						"youtube_dislikes_estimated":1200,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"N95",
+						"duration_seconds":195,
+						"is_explicit":true,
+						"spotify_streams":181953044,
+						"youtube_streams":56316904,
+						"youtube_likes":1453000,
+						"youtube_dislikes_estimated":20300,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					},
+					{
+						"name":"United In Grief",
+						"duration_seconds":255,
+						"is_explicit":true,
+						"spotify_streams":84118869,
+						"youtube_streams":9434916,
+						"youtube_likes":268000,
+						"youtube_dislikes_estimated":2600,
+						"credited_artists":[
+							{
+								"name": "Kendrick Lamar"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Kenshi Yonezu",
+		"collections": [
+			{
+				"name":"KICK BACK",
+				"type":"single",
+				"tracks":[
+					{
+						"name":"KICK BACK",
+						"duration_seconds":193,
+						"is_explicit":false,
+						"spotify_streams":32748647,
+						"youtube_streams":44720763,
+						"youtube_likes":1372000,
+						"youtube_dislikes_estimated":10300,
+						"credited_artists":[
+							{
+								"name": "Kenshi Yonezu"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Kishi Bashi",
+		"collections": [
+			{
+				"name":"For Every Voice That Never Sang",
+				"type":"single",
+				"tracks":[
+					{
+						"name":"For Every Voice That Never Sang",
+						"duration_seconds":227,
+						"is_explicit":false,
+						"spotify_streams":579319,
+						"youtube_streams":33176,
+						"youtube_likes":749,
+						"youtube_dislikes_estimated":4,
+						"credited_artists":[
+							{
+								"name": "Kishi Bashi"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Cleopatrick",
+		"collections": [
+			{
+				"name":"hometown",
+				"type":"single",
+				"tracks":[
+					{
+						"name":"hometown",
+						"duration_seconds":256,
+						"is_explicit":false,
+						"spotify_streams":65931881,
+						"youtube_streams":2550820,
+						"youtube_likes":43300,
+						"youtube_dislikes_estimated":718,
+						"credited_artists":[
+							{
+								"name": "Cleopatrick"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Dead Poet Society",
+		"collections": [
+			{
+				"name":"Lo Air",
+				"type":"single",
+				"tracks":[
+					{
+						"name":"Lo Air",
+						"duration_seconds":182,
+						"is_explicit":false,
+						"spotify_streams":6150708,
+						"youtube_streams":293704,
+						"youtube_likes":7100,
+						"youtube_dislikes_estimated":61,
+						"credited_artists":[
+							{
+								"name": "Dead Poet Society"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Stephen",
+		"collections": [
+			{
+				"name":"Sincerely",
+				"type":"single",
+				"tracks":[
+					{
+						"name":"Sincerely",
+						"duration_seconds":287,
+						"is_explicit":false,
+						"spotify_streams":9698290,
+						"youtube_streams":8744509,
+						"youtube_likes":118000,
+						"youtube_dislikes_estimated":2115,
+						"credited_artists":[
+							{
+								"name": "Stephen"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Survive Said The Prophet",
+		"collections": [
+			{
+				"name":"found & lost",
+				"type":"single",
+				"tracks":[
+					{
+						"name":"found & lost",
+						"duration_seconds":188,
+						"is_explicit":false,
+						"spotify_streams":24985978,
+						"youtube_streams":9253719,
+						"youtube_likes":140000,
+						"youtube_dislikes_estimated":944,
+						"credited_artists":[
+							{
+								"name": "Survive Said The Prophet"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Crywolf",
+		"collections": [
+			{
+				"name":"Quantum Immortality (Radio Edit)",
+				"type":"single",
+				"tracks":[
+					{
+						"name":"Quantum Immortality (Radio Edit)",
+						"duration_seconds":231,
+						"is_explicit":false,
+						"spotify_streams":232507,
+						"youtube_streams":null,
+						"youtube_likes":null,
+						"youtube_dislikes_estimated":null,
+						"credited_artists":[
+							{
+								"name": "Crywolf"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Denzel Curry",
+		"collections": [
+			{
+				"name":"Walkin",
+				"type":"single",
+				"tracks":[
+					{
+						"name":"Walkin",
+						"duration_seconds":280,
+						"is_explicit":true,
+						"spotify_streams":41514533,
+						"youtube_streams":7790072,
+						"youtube_likes":275900,
+						"youtube_dislikes_estimated":1729,
+						"credited_artists":[
+							{
+								"name": "Denzel Curry"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Eden Project",
+		"collections": [
+			{
+				"name":"Bipolar Paradise",
+				"type":"EP",
+				"tracks":[
+					{
+						"name":"Man Down",
+						"duration_seconds":315,
+						"is_explicit":false,
+						"spotify_streams":7623345,
+						"youtube_streams":4480241,
+						"youtube_likes":36000,
+						"youtube_dislikes_estimated":525,
+						"credited_artists":[
+							{
+								"name": "Eden Project"
+							}
+						]
+					},
+					{
+						"name":"Soul",
+						"duration_seconds":126,
+						"is_explicit":false,
+						"spotify_streams":3389645,
+						"youtube_streams":1391900,
+						"youtube_likes":8778,
+						"youtube_dislikes_estimated":164,
+						"credited_artists":[
+							{
+								"name": "Eden Project"
+							}
+						]
+					},
+					{
+						"name":"Jupiter",
+						"duration_seconds":242,
+						"is_explicit":false,
+						"spotify_streams":8046765,
+						"youtube_streams":3961911,
+						"youtube_likes":24000,
+						"youtube_dislikes_estimated":348,
+						"credited_artists":[
+							{
+								"name": "Eden Project"
+							}
+						]
+					},
+					{
+						"name":"Fumes",
+						"duration_seconds":211,
+						"is_explicit":false,
+						"spotify_streams":18481982,
+						"youtube_streams":17572665,
+						"youtube_likes":182000,
+						"youtube_dislikes_estimated":2100,
+						"credited_artists":[
+							{
+								"name": "Eden Project"
+							}
+						]
+					},
+					{
+						"name":"drowning.",
+						"duration_seconds":257,
+						"is_explicit":false,
+						"spotify_streams":27617984,
+						"youtube_streams":16507689,
+						"youtube_likes":135000,
+						"youtube_dislikes_estimated":2875,
+						"credited_artists":[
+							{
+								"name": "Eden Project"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
