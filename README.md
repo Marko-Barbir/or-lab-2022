@@ -15,6 +15,15 @@ Update frequency: Never
 
 ### General data information
 
+Data is stored in PostgreSQL 14.4 database hosted on a WSL 2 Docker container available on docker hub.
+
+In the repository a script for exporting the database data to CSV and JSON is also provided (although currently
+it has to be manually updated with correct database information instead of using command line arguments).
+The only command line argument, which is also required is the format which to export to, can be CSV or JSON
+(case-insensitive).
+
+A database dump with all the information is also provided in dump.sql file.
+
 Data was collected on the day of 2022.11.01., by manual collection of publicly available information on the
 web-sites: [Spotify](https://www.spotify.com/) and [YouTube](https://www.youtube.com/).
 Notes:
