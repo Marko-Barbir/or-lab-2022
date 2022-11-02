@@ -1,1 +1,1 @@
-"# Otvoreno Racunarstvo Labos 2022./23." 
+# Laboratorijska vježba iz kolegija Otvoreno računarstvo - 2022./23. 
