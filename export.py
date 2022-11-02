@@ -1,6 +1,5 @@
 import psycopg2
 from sys import argv
-import json
 
 conn = psycopg2.connect(dbname="orlab", user="orlab", password="orlab123",
                         host="localhost", port=49153)
