@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://or.fer.unizg.hr/orartists.json",
+  "title": "artists",
+  "description": "Array of artists which have collections in the database",
+  "type": "array",
+  "default": [],
+  "items": {
+    "title": "artist",
+    "description": "One entry of an artist with its title and collections",
+    "type": "object",
+    "required": [
+      "name",
+      "collections"
+    ],
+    "properties": {
+      "name": {
+        "title": "name",
+        "description": "Artist name as displayed on Spotify",
+        "type": "string"
+      },
+      "collections": {
+        "title": "collections",
+        "type": "array",
+        "items": {
+          "title": "collection",
+          "description": "One collection entry with corresponding name, type and tracks",
+          "type": "object",
+          "required": [
+            "name",
+            "type",
+            "tracks"
+          ],
+          "properties": {
+            "name": {
+              "title": "name",
+              "description": "Name of the collection",
+              "type": "string"
+            },
+            "type": {
+              "title": "Type of the collection",
+              "type": "string",
+              "enum": ["album", "single", "EP"]
+            },
+            "tracks": {
+              "title": "tracks",
+              "description": "Array of the tracks in the collection",
+              "type": "array",
+              "items": {
+                "title": "track",
+                "description": "Track entry with streaming data and credited artists",
+                "type": "object",
+                "required": [
+                  "name",
+                  "duration_seconds",
+                  "is_explicit",
+                  "spotify_streams",
+                  "youtube_streams",
+                  "youtube_likes",
+                  "youtube_dislikes_estimated",
+                  "credited_artists"
+                ],
+                "properties": {
+                  "name": {
+                    "title": "name",
+                    "description": "The name of the track",
+                    "type": "string"
+                  },
+                  "duration_seconds": {
+                    "title": "duration_seconds",
+                    "description": "Duration of the track in seconds",
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0
+                  },
+                  "is_explicit": {
+                    "title": "is_explicit",
+                    "description": "Boolean which represents whether the track contains explicit language",
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "spotify_streams": {
+                    "title": "spotify_streams",
+                    "description": "Amount of times the track had been streamed on Spotify",
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0
+                  },
+                  "youtube_streams": {
+                    "title": "youtube_streams",
+                    "description": "Amount of times the track had been streamed on YouTube",
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0
+                  },
+                  "youtube_likes": {
+                    "title": "youtube_likes",
+                    "description": "Amount of times the track had been liked on YouTube",
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0
+                  },
+                  "youtube_dislikes_estimated": {
+                    "title": "youtube_dislikes_estimated",
+                    "description": "Amount of times the track had been disliked on YouTube estimated by browser addon",
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0
+                  },
+                  "credited_artists": {
+                    "title": "credited_artists",
+                    "description": "Array of artists which are credited on the track according to Spotify",
+                    "type": "array",
+                    "items": {
+                      "title": "credited_artist",
+                      "description": "Object of credited artist",
+                      "type": "object",
+                      "required": [
+                        "name"
+                      ],
+                      "properties": {
+                        "name": {
+                          "title": "name",
+                          "description": "Name of the artist which had been credited on the track",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
