@@ -1,6 +1,7 @@
 package hr.fer.zari.or.backend.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,16 +18,20 @@ public class Collection {
     @Column(name = "type")
     private String type;
 
-    @ManyToMany(mappedBy = "collections")
-    private List<Artist> artists;
-
-    @ManyToMany
+    @ManyToOne
     @JoinTable(
-            name = "collection_track",
+            name = "artist_collection",
             joinColumns = @JoinColumn(name = "collection_id"),
-            inverseJoinColumns = @JoinColumn(name = "track_id")
+            inverseJoinColumns = @JoinColumn(name = "artist_id")
     )
+    private Artist artist;
+
+    @OneToMany(mappedBy = "collection", orphanRemoval = true)
     private List<Track> tracks;
+
+    public Collection() {
+        this.tracks = new ArrayList<>();
+    }
 
     public Long getId() {
         return id;
@@ -52,12 +57,12 @@ public class Collection {
         this.type = type;
     }
 
-    public List<Artist> getArtists() {
-        return artists;
+    public Artist getArtist() {
+        return artist;
     }
 
-    public void setArtists(List<Artist> artists) {
-        this.artists = artists;
+    public void setArtist(Artist artist) {
+        this.artist = artist;
     }
 
     public List<Track> getTracks() {

@@ -1,6 +1,7 @@
 package hr.fer.zari.or.backend.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -14,21 +15,16 @@ public class Artist {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany
-    @JoinTable(
-            name = "artist_collection",
-            joinColumns = @JoinColumn(name = "artist_id"),
-            inverseJoinColumns = @JoinColumn(name = "collection_id")
-    )
+    @OneToMany(mappedBy = "artist", orphanRemoval = true)
     private List<Collection> collections;
 
-    @ManyToMany
-    @JoinTable(
-            name = "artist_track",
-            joinColumns = @JoinColumn(name = "artist_id"),
-            inverseJoinColumns = @JoinColumn(name = "track_id")
-    )
+    @ManyToMany(mappedBy = "artists")
     private List<Track> tracks;
+
+    public Artist() {
+        this.collections = new ArrayList<>();
+        this.tracks = new ArrayList<>();
+    }
 
 
     public Long getId() {

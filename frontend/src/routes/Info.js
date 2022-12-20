@@ -13,7 +13,7 @@ function Info() {
                 General information
             </h2>
             <p>
-                Current version: 1.0<br/>
+                Current version: 2.0<br/>
                 Language: English<br/>
                 Author: Marko Barbir<br/>
                 Contact e-mail: <a href="mailto:marko.barbir@fer.hr">marko.barbir@fer.hr</a><br/>
@@ -25,12 +25,10 @@ function Info() {
                 Data information
             </h2>
             <Stack direction="row" spacing={2}>
-                <Button onClick={()=>{
-                    window.location="http://localhost:8080/api/v1/artists/download?format=json"
-                }}>Download JSON</Button>
-                <Button onClick={()=>{
-                    window.location="http://localhost:8080/api/v1/artists/download?format=csv"
-                }}>Download CSV</Button>
+                <Button href="music_streaming_metrics.json" download="music_streaming_metrics.json"
+                >Download JSON</Button>
+                <Button href="music_streaming_metrics.csv" download="music_streaming_metrics.csv"
+                >Download CSV</Button>
                 <Button href="/data">Open data in table</Button>
             </Stack>
             <h3>

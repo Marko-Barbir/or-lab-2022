@@ -1,6 +1,7 @@
 package hr.fer.zari.or.backend.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -25,10 +26,24 @@ public class Track {
     @Column(name = "youtube_dislikes_estimated")
     private Integer youtubeDislikes;
 
-    @ManyToMany(mappedBy = "tracks")
+    @ManyToMany
+    @JoinTable(
+            name = "artist_track",
+            joinColumns = @JoinColumn(name = "track_id"),
+            inverseJoinColumns = @JoinColumn(name = "artist_id")
+    )
     private List<Artist> artists;
-    @ManyToMany(mappedBy = "tracks")
-    private List<Collection> collections;
+    @ManyToOne
+    @JoinTable(
+            name = "collection_track",
+            joinColumns = @JoinColumn(name = "track_id"),
+            inverseJoinColumns = @JoinColumn(name = "collection_id")
+    )
+    private Collection collection;
+
+    public Track() {
+        this.artists = new ArrayList<>();
+    }
 
     public Long getId() {
         return id;
@@ -102,11 +117,11 @@ public class Track {
         this.artists = artists;
     }
 
-    public List<Collection> getCollections() {
-        return collections;
+    public Collection getCollection() {
+        return collection;
     }
 
-    public void setCollections(List<Collection> collections) {
-        this.collections = collections;
+    public void setCollection(Collection collection) {
+        this.collection = collection;
     }
 }

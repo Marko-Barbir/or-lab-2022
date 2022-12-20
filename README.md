@@ -3,7 +3,7 @@
 This laboratory exercise consists of an open data set containing limited information relating to music streaming on 2 websites: Spotify and YouTube.
 
 ## General information
-Current version: 1.0  
+Current version: 2.0  
 Language: English  
 Author: Marko Barbir  
 Contact e-mail: [marko.barbir@fer.hr](mailto:marko.barbir@fer.hr)  

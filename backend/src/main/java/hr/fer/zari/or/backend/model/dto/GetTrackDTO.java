@@ -1,29 +1,12 @@
 package hr.fer.zari.or.backend.model.dto;
 
+import hr.fer.zari.or.backend.model.Artist;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class GetTrackDTO {
-
-    public static class CreditedArtist{
-        private String name;
-
-        public CreditedArtist(String name) {
-            this.name = name;
-        }
-
-        public CreditedArtist() {
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-    }
-
+    private Long id;
     private String name;
     private Integer duration_seconds;
     private Boolean is_explicit;
@@ -35,6 +18,14 @@ public class GetTrackDTO {
 
     public GetTrackDTO() {
         this.credited_artists = new ArrayList<>();
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -99,5 +90,39 @@ public class GetTrackDTO {
 
     public void setCredited_artists(List<CreditedArtist> credited_artists) {
         this.credited_artists = credited_artists;
+    }
+
+    public static class CreditedArtist{
+
+        private Long id;
+        private String name;
+
+        public CreditedArtist(Artist artist) {
+            this.id = artist.getId();
+            this.name = artist.getName();
+        }
+
+        public CreditedArtist(String name) {
+            this.name = name;
+        }
+
+        public CreditedArtist() {
+        }
+
+        public Long getId() {
+            return id;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }

@@ -72,4 +72,38 @@ public class ModelMappers {
 
         return result;
     }
+
+    public static GetTrackDTO trackToTrackDTO(Track track) {
+        GetTrackDTO trackDTO = new GetTrackDTO();
+        trackDTO.setId(track.getId());
+        trackDTO.setName(track.getName());
+        trackDTO.setDuration_seconds(track.getDuration());
+        trackDTO.setIs_explicit(track.isExplicit());
+        trackDTO.setSpotify_streams(track.getSpotifyStreams());
+        trackDTO.setYoutube_streams(track.getYoutubeStreams());
+        trackDTO.setYoutube_likes(track.getYoutubeLikes());
+        trackDTO.setYoutube_dislikes_estimated(track.getYoutubeDislikes());
+        track.getArtists().forEach(artist -> trackDTO.getCredited_artists().add(new GetTrackDTO.CreditedArtist(artist)));
+
+        return trackDTO;
+    }
+
+    public static GetCollectionDTO collectionToCollectionDTO(Collection collection) {
+        GetCollectionDTO collectionDTO = new GetCollectionDTO();
+        collectionDTO.setId(collection.getId());
+        collectionDTO.setName(collection.getName());
+        collectionDTO.setType(collection.getType());
+        collection.getTracks().forEach(track -> collectionDTO.getTracks().add(trackToTrackDTO(track)));
+
+        return collectionDTO;
+    }
+
+    public static GetArtistDTO artistToArtistDTO(Artist artist) {
+        GetArtistDTO artistDTO = new GetArtistDTO();
+        artistDTO.setId(artist.getId());
+        artistDTO.setName(artist.getName());
+        artist.getCollections().forEach(collection -> artistDTO.getCollections().add(collectionToCollectionDTO(collection)));
+
+        return artistDTO;
+    }
 }
