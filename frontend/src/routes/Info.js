@@ -1,8 +1,11 @@
 import {Box, Button, Container, Stack} from "@mui/material";
+import AuthBar from "../components/AuthBar";
+import RefreshDatasetButton from "../components/RefreshDatasetButton";
 
 function Info() {
     return (
         <Container>
+            <AuthBar/>
             <h1>
                 Laboratory exercise for Open Computing course - 2022./23.
             </h1>
@@ -30,6 +33,7 @@ function Info() {
                 <Button href="music_streaming_metrics.csv" download="music_streaming_metrics.csv"
                 >Download CSV</Button>
                 <Button href="/data">Open data in table</Button>
+                <RefreshDatasetButton/>
             </Stack>
             <h3>
                 General data information

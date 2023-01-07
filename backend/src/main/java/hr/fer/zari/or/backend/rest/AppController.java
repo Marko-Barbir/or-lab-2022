@@ -62,21 +62,7 @@ public class AppController {
             response.setContentType("application/json");
             response.addHeader("Content-Disposition", "attachment; filename=\"music_streaming_metrics.json\"");
         } else if (format.equalsIgnoreCase("csv")) {
-            pw.println("artist_name,collection_name,collection_type,track_name,track_duration_seconds,is_explicit," +
-                    "spotify_streams,youtube_streams,youtube_likes,youtube_dislikes_estimated,track_credited_artist");
-            for (GetArtistDTO artistDTO : outList) {
-                for (GetCollectionDTO collectionDTO : artistDTO.getCollections()) {
-                    for (GetTrackDTO trackDTO : collectionDTO.getTracks()) {
-                        for (GetTrackDTO.CreditedArtist creditedArtist : trackDTO.getCredited_artists()) {
-                            pw.println(String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
-                                    artistDTO.getName(), collectionDTO.getName(), collectionDTO.getType(),
-                                    trackDTO.getName(), trackDTO.getDuration_seconds(), trackDTO.getIs_explicit(),
-                                    trackDTO.getSpotify_streams(), trackDTO.getYoutube_streams(), trackDTO.getYoutube_likes(),
-                                    trackDTO.getYoutube_dislikes_estimated(), creditedArtist.getName()));
-                        }
-                    }
-                }
-            }
+            ArtistService.printArtistsToCSV(pw, outList);
             response.setContentType("text/csv");
             response.addHeader("Content-Disposition", "attachment; filename=\"music_streaming_metrics.csv\"");
         }

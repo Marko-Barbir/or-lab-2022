@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <Auth0Provider
+          domain="dev-yfm4854pratyej54.eu.auth0.com"
+          clientId="YMTaLZeQXCE1TsmrIoMrxQdcMmgWhmxn"
+          redirectUri={window.location.origin}
+          audience="http://zari.fer.hr/or/lab/mb52211/api/v2/"
+          scope="write:update_dataset"
+      >
+          <App />
+      </Auth0Provider>
   </React.StrictMode>
 );
 

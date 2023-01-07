@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
         value = "api/v2",
         produces = "application/json"
 )
+@CrossOrigin(origins = "*")
 public class V2Controller {
 
     private final ArtistService artistService;
@@ -152,5 +153,11 @@ public class V2Controller {
                                                                  @PathVariable("trackId") Long trackId) {
         return new ResponseWrapper<>(HttpStatus.OK.getReasonPhrase(), "Fetched resource",
                 ModelMappers.trackToTrackDTO(trackService.getTrackByArtistId_CollectionId_Id(artistId, collectionId, trackId)));
+    }
+
+    @PostMapping("refresh_local")
+    public ResponseWrapper<String> refreshLocalDataset() throws IOException {
+        artistService.refreshLocalDataset();
+        return new ResponseWrapper<>(HttpStatus.OK.getReasonPhrase(), "Successfully updated local dataset files.", null);
     }
 }

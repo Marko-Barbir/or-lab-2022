@@ -9,6 +9,7 @@ import {createBrowserRouter, RouterProvider, Route} from "react-router-dom"
 
 import Datatable from "./routes/Datatable";
 import Info from "./routes/Info";
+import Profile from "./routes/Profile";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     {
         path: "/data",
         element: <Datatable/>
+    },
+    {
+        path: "/profile",
+        element: <Profile/>
     }
 ])
 
