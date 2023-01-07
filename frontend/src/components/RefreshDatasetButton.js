@@ -23,7 +23,7 @@ export default function RefreshDatasetButton() {
             try {
                 const accessToken = await getAccessTokenSilently({audience, scope});
                 const url = 'http://localhost:8080/api/v2/refresh_local';
-                fetch(url, {
+                await fetch(url, {
                     ...fetchOptions,
                     headers: {
                         ...fetchOptions.headers,

@@ -1,10 +1,16 @@
 package hr.fer.zari.or.backend.model.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import hr.fer.zari.or.backend.model.Artist;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Stream;
 
+@JsonPropertyOrder({ "@context" })
 public class GetTrackDTO {
     private Long id;
     private String name;
@@ -18,6 +24,18 @@ public class GetTrackDTO {
 
     public GetTrackDTO() {
         this.credited_artists = new ArrayList<>();
+    }
+
+    @JsonProperty("@context")
+    public Object getContext() {
+        Map<String, Object> context = new LinkedHashMap<>();
+        context.put("duration_seconds", "duration");
+        context.put("is_explicit", "isFamilyFriendly");
+        Stream.of("spotify_streams", "youtube_streams", "youtube_likes", "youtube_dislikes_estimated")
+                .forEachOrdered(k -> context.put(k, "interactionStatistic"));
+        context.put("credited_artists", "byArtist");
+
+        return context;
     }
 
     public Long getId() {
